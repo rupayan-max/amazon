@@ -7,7 +7,6 @@
 
 .amazon_first_container {
     width: 100%;
-
     background-color: #131921;
 
 }
@@ -17,8 +16,9 @@
     margin: auto;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 1rem;
+    padding: 0.3rem 0;
 }
 
 .logo {
@@ -50,22 +50,98 @@
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin-right: -4px;
 }
-.pro_int{
-    padding: 0.6rem;
-    width: 350px;
-    
+
+.pro_int {
+    padding: 0.7rem;
+    width: 400px;
+    border: none;
+
 }
-.pro_int::placeholder{
+
+.pro_int::placeholder {
     font-size: 1rem;
 }
-.search_btn{
+
+.search_btn {
     padding: 0.7rem 0.9rem;
     background-color: #febd69;
     border: none;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    margin-left: -6px;
 }
-.search_icon{
+
+.search_icon {
     font-size: 0.95rem;
+}
+
+.lang {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.flagimg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.langbtn {
+    color: white;
+    background-color: #131921;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.acc_log_in {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sign {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 525;
+}
+
+.account {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.return {
+    display: flex;
+    flex-direction: column;
+}
+
+.ro_navigation {
+    text-decoration: none;
+    color: white;
+}
+
+.return_text {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 525;
+}
+
+.order_text {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.cart_text{
+    text-decoration: none;
+    color:white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.cart_icon{
+    font-size: 1.7rem;
 }
