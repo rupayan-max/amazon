@@ -136,12 +136,51 @@
     font-size: 0.9rem;
     font-weight: bold;
 }
-.cart_text{
+
+.cart_text {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 0.9rem;
     font-weight: bold;
 }
-.cart_icon{
+
+.cart_icon {
     font-size: 1.7rem;
+}
+
+/* First Content end  */
+
+/* Second Content Start */
+
+.second_container {
+    width: 100%;
+    background-color: #232f3e;
+}
+
+.second_content {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 0.6rem 0;
+}
+
+.link_text {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 550;
+
+}
+
+.al {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.al i {
+    font-size: 1.2rem;
 }
