@@ -300,7 +300,7 @@
 
 .bike_content {
     width: 97%;
-    
+
     margin: auto;
     background-color: white;
     padding: 1rem 1rem;
@@ -316,49 +316,46 @@
 .bike_offers {
     text-decoration: none;
     color: rgb(47, 120, 150);
-
 }
 
 .bike_catalogue {
-    
     display: flex;
     overflow: auto;
-    scrollbar-width: none; 
-    scrollbar-gutter: stable; 
+    scrollbar-width: auto;
+    scrollbar-gutter: stable;
     padding: 1rem 0;
+
     &::-webkit-scrollbar {
-        width: 0; 
-        height: 0; /* Hides horizontal scrollbar */
+        width: 6px;
+        height: 6px;
+        visibility: hidden;
+
     }
 }
+
 .bike_catalogue:hover {
-    scrollbar-width: auto; /* Shows scrollbar on hover (Firefox) */
-
-    /* For WebKit/Blink browsers (Chrome, Safari, Edge) */
+    scrollbar-width: auto;
     &::-webkit-scrollbar {
-        width:6px; /* Or your desired width for vertical scrollbar */
-        height: 6px; /* Or your desired height for horizontal scrollbar */
+        width: 6px;
+        height: 6px;
+        visibility: visible;
     }
-
-   
-
     &::-webkit-scrollbar-thumb {
-        background: #888; /* Example thumb color */
+        background: #888;
         border-radius: 10px;
     }
-
     &::-webkit-scrollbar-thumb:hover {
-        background: #555; /* Example thumb hover color */
+        background: #555;
     }
 }
 
 .bike_image {
     width: 250px;
     height: 200px;
-   
+
 }
 
-.bike_img_cont{
-     padding: 0 1rem;
-    
+.bike_img_cont {
+    padding: 0 1rem;
+
 }
