@@ -198,7 +198,6 @@
 .hero_container {
     width: 100%;
     position: relative;
-    background: linear-gradient(to top, rgb(253, 184, 196), grey) rgb(205, 210, 205);
     top: 85px;
     z-index: 0;
 }
@@ -212,51 +211,154 @@
     height: 100vh;
 }
 
-.hero_grid {
-    width: 100%;
 
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
+
+
+.first_card_container {
     position: absolute;
-    top: 45%;
-
-
+    top: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 1.3rem;
 }
 
-.fgridhero {
-    padding: 1.2rem;
+.box_card {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
     background-color: white;
 }
 
-.hero_cont_title {
-    font-size: 1.4rem;
+.inner_card_box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    column-gap: 1rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0.5rem 0;
 }
 
-.imgbox1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-
-
+.c1 {
+    width: 120px;
+    height: 150px;
 }
 
-.imageleft {
-    width: 7rem;
-    height: 6rem;
+.c1_cont {
+    width: 100%;
+    height: 70%;
+    text-decoration: none;
+}
+
+.c1_image {
+    width: 100%;
+    height: 70%;
     object-fit: cover;
 }
 
-.imgbox1 a {
-    text-decoration: none;
+.box_title {
+    font-size: 1.35rem;
+    font-weight: bold;
 }
 
-.products_title {
-    font-size: 0.7rem;
-    font-weight: 550;
+.photo_title {
+    font-size: 12px;
+    color: rgb(38, 39, 40);
+}
+
+.image_cont {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card_image {
+    width: 100%;
+    height: 300px;
+    margin: 0.5rem 0;
+}
+
+.explore {
     text-decoration: none;
-    color: black;
+    color: rgb(41, 131, 166);
+    font-size: 0.8rem;
+}
+
+
+/* Bike section start here */
+.bike_section_container {
+    width: 100%;
+    height: auto;
+    padding-top: 41rem;
+    background: linear-gradient(to top, hotpink, white);
+}
+
+.bike_content {
+    width: 97%;
+    
+    margin: auto;
+    background-color: white;
+    padding: 1rem 1rem;
+
+}
+
+.section_heading {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bike_offers {
+    text-decoration: none;
+    color: rgb(47, 120, 150);
+
+}
+
+.bike_catalogue {
+    
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none; 
+    scrollbar-gutter: stable; 
+    padding: 1rem 0;
+    &::-webkit-scrollbar {
+        width: 0; 
+        height: 0; /* Hides horizontal scrollbar */
+    }
+}
+.bike_catalogue:hover {
+    scrollbar-width: auto; /* Shows scrollbar on hover (Firefox) */
+
+    /* For WebKit/Blink browsers (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+        width:6px; /* Or your desired width for vertical scrollbar */
+        height: 6px; /* Or your desired height for horizontal scrollbar */
+    }
+
+   
+
+    &::-webkit-scrollbar-thumb {
+        background: #888; /* Example thumb color */
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Example thumb hover color */
+    }
+}
+
+.bike_image {
+    width: 250px;
+    height: 200px;
+   
+}
+
+.bike_img_cont{
+     padding: 0 1rem;
+    
 }
