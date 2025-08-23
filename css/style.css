@@ -335,15 +335,18 @@
 
 .bike_catalogue:hover {
     scrollbar-width: auto;
+
     &::-webkit-scrollbar {
         width: 6px;
         height: 6px;
         visibility: visible;
     }
+
     &::-webkit-scrollbar-thumb {
         background: #888;
         border-radius: 10px;
     }
+
     &::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
@@ -359,3 +362,48 @@
     padding: 0 1rem;
 
 }
+
+
+/* Bike down Section start  */
+.bike_down_container {
+    width: 100%;
+    background: linear-gradient(to top, white, hotpink);
+    height: auto;
+    padding: 1rem 0;
+}
+
+.bike_down_content {
+    width: 97%;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+
+}
+
+.B_Down_fist_grid {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+.b_down_title {
+    font-size: 1.3rem;
+}
+.b_down_img{
+    width: 80%;
+    margin: auto;
+}
+.book_img{
+    width: 100%;
+    
+}
+.book_desc{
+    text-decoration: none;
+    color:black;
+    font-size: 0.8rem;
+    
+}
+/* Bike down Section stop  */
