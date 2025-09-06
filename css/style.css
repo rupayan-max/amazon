@@ -434,3 +434,79 @@
 }
 
 /* Bike down Section stop  */
+
+/* <!-- Ayurbed section start  --> */
+
+.ayurbed_container {
+    width: 100%;
+    margin-bottom: 8rem;
+    background: linear-gradient(to top, #e3e6e6, white);
+}
+
+.ayurbed_content {
+    width: 97%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.heading_container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.ayurbed_title {
+    color: rgb(33, 31, 31);
+}
+
+.see_all_offer {
+    text-decoration: none;
+    color: rgb(21, 102, 134);
+}
+
+.ayurved_scroll_container {
+    display: flex;
+    overflow: scroll;
+    gap: 0.7rem;
+    padding: 1rem 0;
+    scrollbar-width: auto;
+    scrollbar-gutter: stable;
+    padding: 1rem 0;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        visibility: hidden;
+    }
+}
+
+.ayurved_scroll_container:hover {
+    scrollbar-width: auto;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        visibility: visible;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.ayurved_image_container {
+    width: 100%;
+}
+
+.ayurved_img {
+    width: 200px;
+    height: 200px;
+}
